@@ -4,6 +4,8 @@ const birthdayElement = document.getElementById("birthday")
 
 const resultElement = document.getElementById("result")
 
+const resetElement = document.getElementById("reset")
+
 function calculateAge() {
    const birthdayValue = birthdayElement.value;
    
@@ -32,7 +34,9 @@ function calculateAge() {
 
    }
    
+function resetButton() {
+    resultElement.innerText = " "
+}
 
-
-
+resetElement.addEventListener("click", resetButton )
 btnElement.addEventListener("click", calculateAge)
