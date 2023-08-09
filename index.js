@@ -11,7 +11,7 @@ function calculateAge() {
     alert("Please enter your birthday")
    } else {
     const age = getAge(birthdayValue)
-    console.log(age)
+    resultElement.innerText = `Your age is ${age} ${age > 1 ? "years" : "year"} old`;
     
    }
    } 
