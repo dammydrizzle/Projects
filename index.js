@@ -33,9 +33,12 @@ function calculateAge() {
     
 
    }
-   
+
 function resetButton() {
     resultElement.innerText = " "
+  birthdayElement.value = " "
+        
+    ;
 }
 
 resetElement.addEventListener("click", resetButton )
